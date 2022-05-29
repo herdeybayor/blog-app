@@ -1,0 +1,27 @@
+###getAll
+GET http://localhost:3333/api/comments
+
+###getById
+GET http://localhost:3333/api/comments/6293651ae9e2295c189c3e2b
+
+###createOne
+POST http://localhost:3333/api/comments
+Content-Type: application/json
+
+{
+    "blog_id": "62934c6617243f8ca0ad3d47",
+    "comment": "Fake2 Nice content😍"
+}
+
+###updateOne
+PUT http://localhost:3333/api/comments/6293651ae9e2295c189c3e2b
+Content-Type: application/json
+
+{
+    "blog_id": "62934c6617243f8ca0ad3d47",
+    "comment": "Fake Nice content😍 (Updated)",
+    "blockComment": true
+}
+
+###deleteOne
+DELETE http://localhost:3333/api/comments/629367237042a2ed5a1137dd

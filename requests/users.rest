@@ -1,0 +1,25 @@
+###getAll
+GET http://localhost:3333/api/users
+
+###getById
+GET http://localhost:3333/api/users/629334ee877d9ca8676a945c
+
+###createOne
+POST http://localhost:3333/api/users
+Content-Type: application/json
+
+{
+    "name": "Olaifa Promise",
+    "email": "olaifapromise1@gmail.com"
+}
+
+###updateOne
+PUT http://localhost:3333/api/users/629334ee877d9ca8676a945c
+Content-Type: application/json
+
+{
+    "name": "Olaifa Promise"
+}
+
+###deleteOne
+DELETE http://localhost:3333/api/users/62933c6cb805d51f56617dc7

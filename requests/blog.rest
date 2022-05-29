@@ -1,0 +1,27 @@
+###getAll
+GET http://localhost:3333/api/blogs
+
+###getById
+GET http://localhost:3333/api/blogs/62934bc717243f8ca0ad3d3b
+
+###createOne
+POST http://localhost:3333/api/blogs
+Content-Type: application/json
+
+{
+    "user_id": "629334ee877d9ca8676a945c",
+    "title": "First Blog Post by Promise",
+    "body": "This is a sample post."
+}
+
+###updateOne
+PUT http://localhost:3333/api/blogs/62934c6617243f8ca0ad3d47
+Content-Type: application/json
+
+{
+    "title": "First Blog Post by Promise (Updated)",
+    "body": "This is a sample post. (Updated)"
+}
+
+###deleteOne
+DELETE http://localhost:3333/api/blogs/629350bd41b98559a59992e8
